@@ -6,6 +6,16 @@
 
 #Ref: http://pwmt.org/projects/zathura/configuration/
 
+
+
+## UNCOMMENT IF APPLICABLE: 
+## direction bug in version 0.12 keeps this from working
+## Instead, the defaults were manually changed in config.c
+# map k search next
+# map K search previous
+
+
+
 set recolor true
 set recolor_darkcolor #BDE090
 set recolor_lightcolor #000000
@@ -24,8 +34,6 @@ map i scroll half-down
 map r reload
 map R rotate rotate-ccw
 
-map k search next
-map K search previous
 
 map w toggle_index
 map f toggle_fullscreen
