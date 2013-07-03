@@ -1,0 +1,260 @@
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll up by 60 pixels
+// @namespace WzMoDRpA8Fca
+// @key u
+// @include *
+// @execute ScrollUp(["60"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll down by 60 pixels
+// @namespace WzMoDRpA8Fca
+// @key e
+// @include *
+// @execute ScrollDown(["60"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll left by 20 pixels
+// @namespace WzMoDRpA8Fca
+// @key n
+// @include *
+// @execute ScrollLeft(["20"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll left by 20 pixel
+// @namespace WzMoDRpA8Fca
+// @key i
+// @include *
+// @execute ScrollRight(["20"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll up by 5 pixels
+// @namespace WzMoDRpA8Fca
+// @key Shift+u
+// @include *
+// @execute ScrollUp(["5"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll left by 5 pixels
+// @namespace WzMoDRpA8Fca
+// @key Shift+n
+// @include *
+// @execute ScrollLeft(["5"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll down by 2 pixels
+// @namespace WzMoDRpA8Fca
+// @key Shift+e
+// @include *
+// @execute ScrollDown(["2"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll left by 2 pixel
+// @namespace WzMoDRpA8Fca
+// @key Shift+i
+// @include *
+// @execute ScrollRight(["2"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Back
+// @namespace WzMoDRpA8Fca
+// @key j
+// @include *
+// @execute Back([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Forward
+// @namespace WzMoDRpA8Fca
+// @key ;
+// @include *
+// @execute Forward([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the left tab
+// @namespace WzMoDRpA8Fca
+// @key h
+// @include *
+// @execute SelectLeftTab([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the right tab
+// @namespace WzMoDRpA8Fca
+// @key o
+// @include *
+// @execute SelectRightTab([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Reload
+// @namespace WzMoDRpA8Fca
+// @key r
+// @include *
+// @execute Reload([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Reload (Cacheless)
+// @namespace WzMoDRpA8Fca
+// @key Shift+r
+// @include *
+// @execute CachelessReload([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 1-th tab
+// @namespace WzMoDRpA8Fca
+// @key 1
+// @include *
+// @execute SelectNthTab(["1"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 2-th tab
+// @namespace WzMoDRpA8Fca
+// @key 2
+// @include *
+// @execute SelectNthTab(["2"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 3-th tab
+// @namespace WzMoDRpA8Fca
+// @key 3
+// @include *
+// @execute SelectNthTab(["3"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 4-th tab
+// @namespace WzMoDRpA8Fca
+// @key 4
+// @include *
+// @execute SelectNthTab(["4"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 5-th tab
+// @namespace WzMoDRpA8Fca
+// @key 5
+// @include *
+// @execute SelectNthTab(["5"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 6-th tab
+// @namespace WzMoDRpA8Fca
+// @key 6
+// @include *
+// @execute SelectNthTab(["6"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 7-th tab
+// @namespace WzMoDRpA8Fca
+// @key 7
+// @include *
+// @execute SelectNthTab(["7"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 8-th tab
+// @namespace WzMoDRpA8Fca
+// @key 8
+// @include *
+// @execute SelectNthTab(["8"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Select the 9-th tab
+// @namespace WzMoDRpA8Fca
+// @key 9
+// @include *
+// @execute SelectNthTab(["9"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll up by 500 pixels
+// @namespace WzMoDRpA8Fca
+// @key l
+// @include *
+// @execute ScrollUp(["500"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Scroll down by 500 pixels
+// @namespace WzMoDRpA8Fca
+// @key y
+// @include *
+// @execute ScrollDown(["500"])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Close the current tab
+// @namespace WzMoDRpA8Fca
+// @key w
+// @include *
+// @execute CloseTab([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Open a new tab
+// @namespace WzMoDRpA8Fca
+// @key t
+// @include *
+// @execute OpenTab([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Open a new window
+// @namespace WzMoDRpA8Fca
+// @key Shift+t
+// @include *
+// @execute OpenNewWindow([])
+// ==/UserScript==
+
+// ==UserScript==
+// @ShortcutManager
+// @name Close the current window
+// @namespace WzMoDRpA8Fca
+// @key Shift+w
+// @include *
+// @execute CloseWindow([])
+// ==/UserScript==

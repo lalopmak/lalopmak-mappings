@@ -1,0 +1,64 @@
+## License
+
+## This software is licensed under the CC0 1.0 Public Domain Declaration, as
+## released by Creative Commons <http://creativecommons.org/publicdomain/zero/1.0/>.
+## This software comes with NO WARRANTIES OR GUARANTEES WHATSOEVER.
+
+#Ref: http://pwmt.org/projects/zathura/configuration/
+
+set recolor true
+set recolor_darkcolor #BDE090
+set recolor_lightcolor #000000
+set defaultbg_color #000000
+
+map b open
+map o goto
+map t follow
+
+
+map e scroll down
+map u scroll up
+map n scroll half-up
+map i scroll half-down
+
+map r reload
+map R rotate rotate-ccw
+
+map k search next
+map K search previous
+
+map w toggle_index
+map f toggle_fullscreen
+
+#map z zoom height       
+
+
+map q quit
+set scrollbars true
+
+set adjust-open width
+map <Space> adjust_window
+
+#values for later
+# set default-bg "#000000"
+# set default-fg "#000000"
+# set inputbar-bg "#000000"
+# set inputbar-fg "#000000"
+# set statusbar-bg "#000000"
+# set statusbar-fg "#000000"
+# set tabbar-bg "#000000"
+# set tabbar-fg "#000000"
+# set tabbar-focus-bg "#000000"
+# set tabbar-focus-fg "#000000"
+# set completion-bg "#000000"
+# set completion-fg "#000000"
+# set completion-group-bg "#000000"
+# set completion-group-fg "#000000"
+# set completion-highlight-bg "#000000"
+# set completion-highlight-fg "#000000"
+# set notification-error-bg "#000000"
+# set notification-error-fg "#000000"
+# set notification-warning-bg "#000000"
+# set notification-warning-fg "#000000"
+# set recolor-darkcolor "#000000"
+# set recolor-lightcolor "#000000"

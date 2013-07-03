@@ -1,0 +1,147 @@
+""" License
+"" This software is licensed under the CC0 1.0 Public Domain Declaration, as
+"" released by Creative Commons <http://creativecommons.org/publicdomain/zero/1.0/>.
+"" This software comes with NO WARRANTIES OR GUARANTEES WHATSOEVER.
+
+
+" Pentadactyl configuration
+" Colemak-vim-based 
+" Very incomplete
+
+" Instructions:
+" Add to your .pentadactyl.rc: 
+"        source /path/to/colemak.pentadactyl
+
+
+"Makes sure the usual GUI is present
+:set guioptions+=mT
+
+
+"unmap a
+"unmap l
+"unmap u
+"unmap w
+"unmap y
+
+"" only show the tab bar when there are multiple tabs
+set showtabline=multitab
+
+"" highlight search
+set hlfind
+
+:set titlestring="Icecat"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+" Start command line mode
+"map -b ; :
+
+" Start an extended hint mode
+map -b . ;
+
+
+map -b u 2<Up>
+map -b e 2<Down>
+map -b n 20<Up>
+map -b i 20<Down>
+
+map -b U <PageUp>
+map -b E <PageDown>
+map -b N <Left>
+map -b I <Right>
+
+
+"map -b <A-u> <Up>
+"map -b <A-e> 0.1<Down>
+"map -b <A-n> 20<Up>
+"map -b <A-i> 20<Down>
+
+
+" Tab navigation
+map -b h :tabprevious<CR>
+map -b o :tabnext<CR>
+
+
+" Go back in the browser history
+map -b l :back<CR>
+map -b L :back
+
+" Go forward in the browser history
+map -b y :forward<CR>
+map -b Y :forward
+
+""""""""""""
+
+"Bypass vim search
+"map -b / <pass-next-key><C-f>
+
+" Find next
+map -b k <find-next>
+" Find previous
+map -b K <find-previous>
+
+""""""""""""
+
+" Undo closing of a tab
+map -b z u
+"" U list closed tabs
+nmap -builtin Z :undo<Space>
+
+"Copy 
+"map -b x <yank-word>
+map c <pass-next-key><C-c>
+map -builtin <C-c> <pass-next-key><C-c>
+
+"Paste
+"map v <pass-next-key><C-v>
+map -m i <C-v> <pass-next-key-builtin><C-v><C-v>
+
+"Select all
+map -m i <C-a> <pass-next-key><C-a>
+
+"Highlight url
+map -builtin <C-l> <pass-next-key><C-l>
+
+" Copy url link
+map -b ca ;y
+
+" Copy url
+map -b cc <yank-location>
+
+"Close tab
+map -b w :tabclose<CR>
+
+" Stop loading the current web page
+"map -b f <C-c>"
+
+""""""""""""
+set hintkeys=NEOIKUYHL
+"hint in current tab
+map -b t f
+"hint in new tab
+map -b s F
+
+""""""""""""
+"Go to url
+map a :open<Space>
+map A :tabopen<Space>
+map R :winopen<Space>
+
+map T :open<Space>
+map S :tabopen<Space>
+
+""""""""""""
+" Go to an older position in the jump list
+map -b <C-n> <C-o>
+
+" Start caret mode
+map -b V <Insert>
+
+
+"save link 
+map f ;s
+"save page
+"map F :saveas
+map F :dialog<Space>savepage<CR>
+
