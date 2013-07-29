@@ -97,6 +97,9 @@ map S Vomnibar.activateInNewTab
 map d Vomnibar.activate
 map a Vomnibar.activateInNewTab
 
+map p openCopiedUrlInNewTab
+map P openCopiedUrlInCurrentTab
+
 ##########
 
 #close tab
