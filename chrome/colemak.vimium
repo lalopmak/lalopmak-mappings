@@ -94,8 +94,8 @@ map s LinkHints.activateModeToOpenInNewTab
 #open url
 map T Vomnibar.activate
 map S Vomnibar.activateInNewTab
-map r Vomnibar.activate
-map a Vomnibar.activateInNewTab
+map a Vomnibar.activate
+map r Vomnibar.activateInNewTab
 
 map p openCopiedUrlInNewTab
 map P openCopiedUrlInCurrentTab
