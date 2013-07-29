@@ -94,7 +94,7 @@ map s LinkHints.activateModeToOpenInNewTab
 #open url
 map T Vomnibar.activate
 map S Vomnibar.activateInNewTab
-map d Vomnibar.activate
+map r Vomnibar.activate
 map a Vomnibar.activateInNewTab
 
 map p openCopiedUrlInNewTab
@@ -112,7 +112,7 @@ map ca LinkHints.activateModeToCopyLinkUrl
 #map c copyCurrentUrl
 #map C LinkHints.activateModeToCopyLinkUrl
 
-map r reload
+map d reload
 
 #duplicates tab in new window
 map gw duplicateTab
