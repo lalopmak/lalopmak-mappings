@@ -94,7 +94,7 @@ map s LinkHints.activateModeToOpenInNewTab
 #open url
 map T Vomnibar.activate
 map S Vomnibar.activateInNewTab
-map A Vomnibar.activate
+map d Vomnibar.activate
 map a Vomnibar.activateInNewTab
 
 ##########
