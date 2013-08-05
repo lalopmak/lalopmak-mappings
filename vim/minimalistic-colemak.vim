@@ -21,3 +21,5 @@
 nnoremap j h|xnoremap j h|onoremap j h|
 nnoremap h k|xnoremap h k|onoremap h k|
 nnoremap k j|xnoremap k j|onoremap k j|
+
+nnoremap K L|xnoremap K L|onoremap K L|
