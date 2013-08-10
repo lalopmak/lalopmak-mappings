@@ -44,7 +44,7 @@ set hlfind
 
 
 " Start command line mode
-"map -b ; :
+map -b ; :
 
 " Start an extended hint mode
 map -b . ;
@@ -127,18 +127,15 @@ map -b w :tabclose<CR>
 """"""""""""
 set hintkeys=NEOIKUYHL
 "hint in current tab
-map -b t f
+map -b t ;o
 "hint in new tab
-map -b s F
+map -b s ;b
 
 """"""""""""
 "Go to url
-map a :open<Space>
-map A :tabopen<Space>
-map R :winopen<Space>
-
-map T :open<Space>
-map S :tabopen<Space>
+map r :open<Space>
+map a :tabopen<Space>
+map A :winopen<Space>
 
 """"""""""""
 " Go to an older position in the jump list
@@ -149,8 +146,14 @@ map -b V <Insert>
 
 
 "save link 
-map f ;s
+map -b f ;s
 "save page
 "map F :saveas
 map F :dialog<Space>savepage<CR>
 
+
+""""""""""
+"Reload
+""""""""""
+map d :reload<CR>
+map D :reload!<CR>
