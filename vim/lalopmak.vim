@@ -431,3 +431,6 @@ noremap Q R|
 let s:current_file=expand("<sfile>")
 "cnoreabbrev <expr> ars (getcmdtype() . getcmdline() != ':ars' ? 'ars' : '99sview \|wincmd w')
 "cnoreabbrev <expr> sra (getcmdtype() . getcmdline() != ':sra' ? 'sra' : 'wincmd o')
+
+
+colorscheme desert
