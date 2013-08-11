@@ -157,3 +157,9 @@ map F :dialog<Space>savepage<CR>
 """"""""""
 map d :reload<CR>
 map D :reload!<CR>
+
+"""""""""""
+"Goto clipboard url
+"""""""""""
+map -b p P
+map -b P p
