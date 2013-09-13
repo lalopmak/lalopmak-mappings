@@ -15,7 +15,7 @@
 " SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 " * Use ":source minimalistic-colemak.vim" (without quotes) to load this file. Adjust path to minimalistic-colemak.vim if needed.
-" * Add the line: "source minimalistic-colemak.vim" (without quotes) in your .vimrc file to automatically load this file. 
+" * Add the line: "source minimalistic-colemak.vim" (without quotes) in your .vimrc file to automatically load this file.
 "   It is recommended to load minimalistic-colemak.vim after all other Vim scripts.
 
 nnoremap j h|xnoremap j h|onoremap j h|
@@ -25,3 +25,6 @@ nnoremap k j|xnoremap k j|onoremap k j|
 nnoremap K L|xnoremap K L|onoremap K L|
 
 colorscheme desert
+source ~/lalopmak-mappings/vim/lalopmak-bundles.vim
+
+let g:EasyMotion_leader_key = 'f'

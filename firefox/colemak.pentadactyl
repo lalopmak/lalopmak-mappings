@@ -14,17 +14,16 @@
 "" SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 " Pentadactyl configuration
-" Colemak-vim-based 
+" Colemak-vim-based
 " Very incomplete
 
 " Instructions:
-" Add to your .pentadactyl.rc: 
+" Add to your .pentadactyl.rc:
 "        source /path/to/colemak.pentadactyl
 
 
 "Makes sure the usual GUI is present
 :set guioptions+=mT
-
 
 "unmap a
 "unmap l
@@ -97,7 +96,7 @@ map -b z u
 "" U list closed tabs
 nmap -builtin Z :undo<Space>
 
-"Copy 
+"Copy
 "map -b x <yank-word>
 map c <pass-next-key><C-c>
 map -builtin <C-c> <pass-next-key><C-c>
@@ -145,7 +144,7 @@ map -b <C-n> <C-o>
 map -b V <Insert>
 
 
-"save link 
+"save link
 map -b f ;s
 "save page
 "map F :saveas

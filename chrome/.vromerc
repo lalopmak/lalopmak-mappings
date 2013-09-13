@@ -1,6 +1,17 @@
+set hintkeys=arstneiowfuyvk,pldh
 map r o
 map a O
-map l [[
-map y ]]
+
+"Movements unei
+map n <C-u>
+map i <C-d> 
+map u k
+map e j
+
+map l H
+map y L
+
+map t f
+map S <M-f>
 
 map cc y
