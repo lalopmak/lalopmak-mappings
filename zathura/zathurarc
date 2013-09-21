@@ -18,7 +18,7 @@
 
 
 
-## UNCOMMENT IF APPLICABLE: 
+## UNCOMMENT IF APPLICABLE:
 ## direction bug in version 0.12 keeps this from working
 ## Instead, the defaults were manually changed in config.c
 # map k search next
@@ -37,9 +37,9 @@ map t follow
 
 
 map e scroll down
-map u scroll up
-map n scroll half-up
-map i scroll half-down
+map y scroll up
+map u scroll half-up
+map n scroll half-down
 
 map r reload
 map R rotate rotate-ccw
@@ -48,7 +48,7 @@ map R rotate rotate-ccw
 map w toggle_index
 map f toggle_fullscreen
 
-#map z zoom height       
+#map z zoom height
 
 
 map q quit
