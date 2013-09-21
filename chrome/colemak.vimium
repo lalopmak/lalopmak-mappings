@@ -54,8 +54,8 @@ map q focusInput
 
 #basic navigation
 map y scrollUp
-map N scrollLeft
 map e scrollDown
+map N scrollLeft
 map U scrollRight
 
 #page up, page down
