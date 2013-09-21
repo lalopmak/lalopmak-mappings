@@ -25,13 +25,13 @@
 # * rR/sS set to insert/append (at position or line)
 # * undo as z (no redo, however)
 
-# Known bugs: 
-# * change and delete don't seem to work with movement keys (except l)  
+# Known bugs:
+# * change and delete don't seem to work with movement keys (except l)
 
 
 
 
-#put .inputrc (or symlink to .inputrc) in home folder 
+#put .inputrc (or symlink to .inputrc) in home folder
 
 set editing-mode vi
 
@@ -39,53 +39,9 @@ set editing-mode vi
 set show-all-if-ambiguous on
 # Ignore case
 set completion-ignore-case on
-# on menu-complete, first display the common prefix, then cycle through the 
+# on menu-complete, first display the common prefix, then cycle through the
 # options when hitting TAB
 menu-complete-display-prefix on
-
-###########################################################
-# Keymaps for when we're in command mode (e.g., after hitting ESC)
-set keymap vi-command
-
-#navigation
-"l": vi-bword
-"y": vi-fword
-
-"n": backward-char
-"i": forward-char
-
-"L": beginning-of-line
-"Y": end-of-line
-
-"u": previous-history
-"e": next-history
-
-"j": history-search-backward
-"h": history-search-forward
-
-
-#insertion/append modes
-"r": vi-insertion-mode
-"R"  vi-insert-beg
-
-"s": vi-append-mode
-"S"  vi-append-eol
-
-"z": undo
-
-#replace mode
-"q": vi-change-char
-"Q": vi-replace
-
-#repeat search
-"k": vi-search-again
-
-#find backward
-"w": "F"
-
-#repeat find
-"t": ";"
-"T": ","
 
 
 ###########################################################
@@ -95,3 +51,48 @@ set keymap vi-insert
 # Needed because binding 'p' in command mode above wipes its insert mode
 # function, too. This fixes that, and will insert 'p' when you type 'p'.
 "p": self-insert
+
+###########################################################
+# Keymaps for when we're in command mode (e.g., after hitting ESC)
+# largely abandoned due to unreliability (e.g. search-again, undo don't get bound)
+set keymap vi-command
+
+# #navigation
+# "l": vi-bword
+# "y": vi-fword
+
+# "n": backward-char
+# "i": forward-char
+
+# "L": beginning-of-line
+# "Y": end-of-line
+
+# "u": previous-history
+# "e": next-history
+
+# "j": history-search-backward
+# "h": history-search-forward
+
+
+# #insertion/append modes
+# "r": vi-insertion-mode
+# "R"  vi-insert-beg
+
+# "s": vi-append-mode
+# "S"  vi-append-eol
+
+# "z": undo
+
+# #replace mode
+# "q": vi-change-char
+# "Q": vi-replace
+
+# #repeat search
+# "k": vi-search-again
+
+# #find backward
+# "w": "F"
+
+# #repeat find
+# "t": ";"
+# "T": ","
