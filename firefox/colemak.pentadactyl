@@ -49,15 +49,15 @@ map -b ; :
 map -b . ;
 
 
-map -b u 2<Up>
+map -b y 2<Up>
 map -b e 2<Down>
-map -b n 20<Up>
-map -b i 20<Down>
+map -b u 20<Up>
+map -b n 20<Down>
 
-map -b U <PageUp>
-map -b E <PageDown>
+" map -b U <PageUp>
+" map -b E <PageDown>
 map -b N <Left>
-map -b I <Right>
+map -b U <Right>
 
 
 "map -b <A-u> <Up>
