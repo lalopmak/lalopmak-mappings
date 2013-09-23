@@ -57,6 +57,12 @@ set keymap vi-insert
 # largely abandoned due to unreliability (e.g. search-again, undo don't get bound)
 set keymap vi-command
 
+"j": backward-char
+"l": forward-char
+
+"h": previous-history
+"k": next-history
+
 # #navigation
 # "l": vi-bword
 # "y": vi-fword
