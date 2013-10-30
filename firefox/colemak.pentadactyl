@@ -37,7 +37,7 @@ set showtabline=multitab
 "" highlight search
 set hlfind
 
-:set titlestring="Icecat"
+":set titlestring="Icecat"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

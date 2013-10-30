@@ -41,6 +41,12 @@ map y scroll up
 map u scroll half-up
 map n scroll half-down
 
+map E scroll left
+map Y scroll right
+
+map U zoom in
+map N zoom out
+
 map r reload
 map R rotate rotate-ccw
 
@@ -49,6 +55,7 @@ map w toggle_index
 map f toggle_fullscreen
 
 #map z zoom height
+
 
 
 map q quit

@@ -434,3 +434,6 @@ let s:current_file=expand("<sfile>")
 
 
 colorscheme desert
+
+let mapleader = " " 
+inoremap tn <ESC>

@@ -55,6 +55,7 @@ set keymap vi-insert
 ###########################################################
 # Keymaps for when we're in command mode (e.g., after hitting ESC)
 # largely abandoned due to unreliability (e.g. search-again, undo don't get bound)
+# bind -p to check
 set keymap vi-command
 
 "j": backward-char
@@ -62,6 +63,19 @@ set keymap vi-command
 
 "h": previous-history
 "k": next-history
+
+
+
+
+
+
+# "n": backward-char
+# "i": forward-char
+
+# "u": previous-history
+# "e": next-history
+
+
 
 # #navigation
 # "l": vi-bword

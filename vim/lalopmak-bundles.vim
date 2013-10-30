@@ -19,6 +19,9 @@ NeoBundle 'Shougo/vimproc'
 " Original repos on github
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Shougo/unite.vim'
+" NeoBundle 'justinmk/vim-sneak'
+NeoBundle 'tpope/vim-repeat'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
 NeoBundle 'L9'
@@ -27,9 +30,9 @@ NeoBundle 'rails.vim'
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
 " gist repos
-NeoBundle 'gist:Shougo/656148', {
-\ 'name': 'everything.vim',
-\ 'script_type': 'plugin'}
+" NeoBundle 'gist:Shougo/656148', {
+" \ 'name': 'everything.vim',
+" \ 'script_type': 'plugin'}
 " Non git repos
 NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
