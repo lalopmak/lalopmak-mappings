@@ -20,6 +20,8 @@ vim: ~/.vimrc
 
 readline: ~/.inputrc
 
+ranger: ~/.config/ranger
+
 Disclaimer
 -----
 THIS SOFTWARE AND ANY ASSOCIATED DOCUMENTATION ARE PROVIDED BY THE COPYRIGHT 

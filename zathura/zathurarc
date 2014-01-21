@@ -21,8 +21,8 @@
 ## UNCOMMENT IF APPLICABLE:
 ## direction bug in version 0.12 keeps this from working
 ## Instead, the defaults were manually changed in config.c
-# map k search next
-# map K search previous
+map k search next
+map K search previous
 
 
 
