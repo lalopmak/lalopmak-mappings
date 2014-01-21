@@ -21,11 +21,22 @@
 inoremap tn <ESC>
 let mapleader = " " 
 
-nnoremap j h|xnoremap j h|onoremap j h|
-nnoremap h k|xnoremap h k|onoremap h k|
-nnoremap k j|xnoremap k j|onoremap k j|
+"j as end word
+nnoremap j e|xnoremap j e|onoremap j e|
 
-nnoremap K L|xnoremap K L|onoremap K L|
+"k as next/previous match
+nnoremap k n|xnoremap k n|onoremap k n|
+nnoremap K N|xnoremap K N|onoremap K N|
+
+"n/e as down/up
+nnoremap n j|xnoremap n j|onoremap n j|
+nnoremap e k|xnoremap e k|onoremap e k|
+
+"Old: remap h/k to up/down, jl to left/right, 
+" nnoremap j h|xnoremap j h|onoremap j h|
+" nnoremap h k|xnoremap h k|onoremap h k|
+" nnoremap k j|xnoremap k j|onoremap k j|
+" nnoremap K L|xnoremap K L|onoremap K L|
 
 colorscheme desert
 source ~/lalopmak-mappings/vim/lalopmak-bundles.vim
