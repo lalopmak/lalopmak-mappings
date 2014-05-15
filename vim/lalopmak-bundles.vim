@@ -17,10 +17,12 @@ NeoBundle 'Shougo/vimproc'
 "
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
+NeoBundle 'rking/ag.vim'
+NeoBundle 'tpope/timl'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/unite.vim'
-" NeoBundle 'justinmk/vim-sneak'
+NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
@@ -36,6 +38,7 @@ NeoBundle 'git://git.wincent.com/command-t.git'
 " Non git repos
 NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
+NeoBundle 'tpope/vim-markdown'
 
 " ...
 
@@ -48,3 +51,5 @@ filetype plugin indent on     " Required!
 
 " Installation check.
 NeoBundleCheck
+
+set rtp+=~/.fzf
