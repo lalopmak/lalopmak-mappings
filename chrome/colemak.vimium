@@ -1,5 +1,5 @@
 ;;; License
-;; This software is licensed under the CC0 1.0 Public Domain Declaration, as
+;; This software is licensed under the CC0 1.0 Public Domain Dedication, as
 ;; released by Creative Commons <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 ;; THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS",
@@ -61,6 +61,8 @@ map U scrollRight
 #page up, page down
 map u scrollPageUp
 map n scrollPageDown
+map f scrollPageUp
+map t scrollPageDown
 
 #too huge a jump
 #map U scrollFullPageUp
@@ -114,7 +116,7 @@ map v Vomnibar.activateTabSelection
 ##########
 
 #follow links
-map t LinkHints.activateMode
+map d LinkHints.activateMode
 map s LinkHints.activateModeToOpenInNewTab
 
 #open url
@@ -138,7 +140,7 @@ map ca LinkHints.activateModeToCopyLinkUrl
 #map c copyCurrentUrl
 #map C LinkHints.activateModeToCopyLinkUrl
 
-map d reload
+map g reload
 
 #duplicates tab in new window
 map gw duplicateTab

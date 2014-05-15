@@ -51,6 +51,9 @@ set keymap vi-insert
 # Needed because binding 'p' in command mode above wipes its insert mode
 # function, too. This fixes that, and will insert 'p' when you type 'p'.
 "p": self-insert
+"\C-k": kill-line
+"\C-l": backward-kill-line
+"\C-e": end-of-line
 
 ###########################################################
 # Keymaps for when we're in command mode (e.g., after hitting ESC)
