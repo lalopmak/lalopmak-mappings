@@ -14,150 +14,210 @@
 "" SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 " Pentadactyl configuration
-" Colemak-vim-based 
+" Colemak-vim-based
 " Very incomplete
 
 " Instructions:
-" Add to your .pentadactyl.rc: 
-"        source /path/to/colemak.pentadactyl
+" Add to your .pentadactyl.rc:
+"        source /path/to/colemak.vimperator
 
 
-"Makes sure the usual GUI is present
-":set guioptions+=mT
+:colorscheme darkness3
+" :colorscheme Mediterranean
 
-
-"unmap a
-"unmap l
-"unmap u
-"unmap w
-"unmap y
-" unmap ;
-
-"" only show the tab bar when there are multiple tabs
-"set showtabline=multitab
-
-"" highlight search
-"set hlfind
-
-:set titlestring="Icecat"
+:set titlestring="Firefox" 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 " Start command line mode
-"noremap ; :
+nnoremap ; :
+nnoremap \' :
+nnoremap \" :
 
 " Start an extended hint mode
-noremap . ;
+nnoremap , ;
 
+ 
+nnoremap y 2k
+nnoremap e 2j
+nnoremap u 15k
+nnoremap n 15j
+" nnoremap u <C-u>
+" nnoremap n <C-d>
 
-noremap u 2<Up>
-noremap e 2<Down>
-noremap n <PageUp>
-noremap i <PageDown>
+nnoremap tu $
+nnoremap tn 0
 
-noremap U <PageUp>
-noremap E <PageDown>
-noremap N <Left>
-noremap I <Right>
+"amount to scroll with C-u, C-d
+set scroll=20
 
+nnoremap <C-n> 4h
+nnoremap <C-u> 4l
+nnoremap N h
+nnoremap U l
 
-"noremap <A-u> <Up>
-"noremap <A-e> 0.1<Down>
-"noremap <A-n> 20<Up>
-"noremap <A-i> 20<Down>
+nnoremap <C-y> $
+nnoremap <C-e> 0
+nnoremap te gg
+nnoremap ty G
 
+nnoremap tl gg0
+nnoremap ti G$
 
 " Tab navigation
-noremap h :tabprevious<CR>
-noremap o :tabnext<CR>
-
+nnoremap h <C-p>
+nnoremap o <C-n>
+nnoremap v :buffer! 
 
 " Go back in the browser history
-noremap l :back<CR>
-noremap L :back
+nnoremap l :back<CR>
+nnoremap L :back 
 
 " Go forward in the browser history
-noremap y :forward<CR>
-noremap Y :forward
+nnoremap i :forward<CR>
+nnoremap I :forward 
 
 """"""""""""
 
 "Bypass vim search
-"noremap / <pass-next-key><C-f>
+"noremap / <C-v><C-f>
+" nnoremap <C-f> /
+nnoremap <C-f> <S-Esc><C-f><S-Esc>
+
+set hlsearch=true
+
 
 " Find next
-noremap k <find-next>
+nnoremap k n
 " Find previous
-noremap K <find-previous>
+nnoremap K N
 
 """"""""""""
+
+inoremap <C-n> <C-a>
+cnoremap <C-n> <C-a>
+
+"C-o opens up editor
+inoremap <C-o> <C-i>
 
 " Undo closing of a tab
-noremap z u
+nnoremap x u
 "" U list closed tabs
-nnoremap Z :undo<Space>
+nnoremap X :undo<Space>
 
-"Copy 
+"Cut
+vnoremap <C-x> d
+
+"Copy
 "noremap x <yank-word>
-vnoremap c y
-map c <pass-next-key><C-c>
-noremap <C-c> <C-v><C-c>
+" nnoremap c <C-v><C-c>
+nnoremap <C-c> <S-Esc><C-c><S-Esc>
+
+"Copy all
+inoremap <C-q> <S-Esc><C-a><C-c><S-Esc>
 
 "Paste
-"map v <pass-next-key><C-v>
-"map i <C-v> <pass-next-key-builtin><C-v><C-v>
-noremap <C-v> <C-v><C-v>
+"noremap v <C-v><C-v>
+nnoremap <C-v> <S-Esc><C-v><S-Esc>
+inoremap <C-p> <S-Esc><C-a><C-v><S-Esc>
 
+"Select all 
+inoremap <C-a> <S-Esc><C-a><S-Esc>
+" inoremap <C-s> <S-Esc><C-a><S-Esc>
 
-"Select all
-noremap <C-a> <Ins><C-a><Ins>
-" noremap <C-a> <C-v><C-a>
-"map i <C-a> <pass-next-key><C-a>
-"map -m i <C-a> <pass-next-key><C-a>
+"Makes sure close tab works e.g. in the address bar
+inoremap <C-w> <S-Esc><C-w><S-Esc>
 
-"Highlight url
-noremap <C-l> <pass-next-key><C-l>
+vnoremap <backspace> d
 
 " Copy url link
-noremap ca ;y
+nnoremap ca ;y
 
 " Copy url
-noremap cc <yank-location>
+nnoremap cc y
 
 "Close tab
-noremap w :tabclose<CR>
+" nnoremap w :tabclose<CR>
+nnoremap j :tabclose<CR>
 
-" Stop loading the current web page
-"noremap f <C-c>"
+"only way to make compatible with tabclose ordering 
+nnoremap w <S-Esc><C-w><S-Esc>
+nnoremap W :tabdetach<CR>
+
 
 """"""""""""
-"set hintkeys=NEOIKUYHL
+" set hintchars=NEOIKUYHL
+" set hintchars=hdvkwuyarstneiof
+" set hintchars=ntfuwyaoresivkhd\' 
+set hintchars=ntfuwyaoresivkhd\"
+
+"follow hint as soon as uniquely identified
+" set hinttimeout 100
+
+" set hinttags="//input[not(@type='hidden')] | //xhtml:input[not(@type='hidden')] | //a | //xhtml:a | //area | //xhtml:area | //iframe | //xhtml:iframe | //textarea | //xhtml:textarea | //button | //xhtml:button | //select | //xhtml:select | //*[@onclick or @onmouseover or @onmousedown or @onmouseup or @oncommand or @role='link' or @tabindex or @role='button' or contains(@class, 'button') or @contenteditable='' or translate(@contenteditable, 'TRUE', 'true')='true']"
+" set hinttags="//input[not(@type='hidden' or @disabled or @readonly)] | //xhtml:input[not(@type='hidden' or @disabled or @readonly)] | //a | //xhtml:a | //area | //xhtml:area | //iframe | //xhtml:iframe | //textarea | //xhtml:textarea | //button | //xhtml:button | //select | //xhtml:select | //*[@onclick or @onmouseover or @onmousedown or @onmouseup or @oncommand or @role='link' or @tabindex or @role='button' or contains(@class, 'button') or @contenteditable='' or translate(@contenteditable, 'TRUE', 'true')='true'] | //area[@href]"
+
+
 "hint in current tab
-noremap t f
+nnoremap a ;o
 "hint in new tab
-noremap s F
+nnoremap s ;b
+
+nnoremap ta gg$;o
+nnoremap tv G;o
 
 """"""""""""
 "Go to url
-map a :open<Space>
-map A :tabopen<Space>
-map R :winopen<Space>
+nnoremap R :tabopen!<Space>
+nnoremap ta :tabopen!<Space>
+nnoremap r :tabopen<Space>
+nnoremap A :winopen<Space>
+nnoremap b :open<Space>
+nnoremap tr :open<Space>
 
-map T :open<Space>
-map S :tabopen<Space>
+inoremap <C-t> <S-Esc><C-t><S-Esc>
 
 """"""""""""
 " Go to an older position in the jump list
-noremap <C-n> <C-o>
+" nnoremap <C-n> <C-o>
 
 " Start caret mode
-noremap V <Insert>
+nnoremap V <S-Esc>
 
 
-"save link 
-map f ;s
+"save object
+nnoremap f ;S
+
 "save page
-"map F :saveas
-map F :dialog<Space>savepage<CR>
+nnoremap ts <S-Esc><C-s><S-Esc>
 
+"save link
+nnoremap F ;s
+nnoremap tf ;s
+
+
+""""""""""
+"Reload
+""""""""""
+nnoremap d :reload<CR>
+nnoremap D :reload!<CR>
+
+"""""""""""
+"Goto clipboard url
+"""""""""""
+nnoremap p <S-Esc><C-t><C-l><C-v><CR><S-Esc>
+nnoremap P <S-Esc><C-l><C-v><CR><S-Esc>
+
+
+" set insertmode=false
+
+set editor="emacsc"
+" au DownloadPost .* !~/bin/cut_with_rgr.zsh "<file>"
+
+set status="input,location,bookmark,history,tabcount,ssl,position"
+" set status="input,location,bookmark,history,tabcount,ssl"
+
+" set tabnumbers=true
+
+nnoremap ct c
