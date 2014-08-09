@@ -116,14 +116,14 @@ map v Vomnibar.activateTabSelection
 ##########
 
 #follow links
-map d LinkHints.activateMode
+map a LinkHints.activateMode
 map s LinkHints.activateModeToOpenInNewTab
 
 #open url
 map T Vomnibar.activate
 map S Vomnibar.activateInNewTab
-map r Vomnibar.activate
-map a Vomnibar.activateInNewTab
+map b Vomnibar.activate
+map r Vomnibar.activateInNewTab
 
 map p openCopiedUrlInNewTab
 map P openCopiedUrlInCurrentTab
@@ -140,7 +140,7 @@ map ca LinkHints.activateModeToCopyLinkUrl
 #map c copyCurrentUrl
 #map C LinkHints.activateModeToCopyLinkUrl
 
-map g reload
+map d reload
 
 #duplicates tab in new window
 map gw duplicateTab
