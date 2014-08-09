@@ -32,7 +32,7 @@ set recolor_lightcolor #000000
 set defaultbg_color #000000
 
 map b open
-map o goto
+map l goto
 map t follow
 
 
@@ -41,8 +41,11 @@ map y scroll up
 map u scroll half-up
 map n scroll half-down
 
-map E scroll left
-map Y scroll right
+map h scroll left
+map o scroll right
+
+map <C-n> scroll left
+map <C-u> scroll right
 
 map U zoom in
 map N zoom out
